@@ -15,7 +15,6 @@ module.exports = {
     entry: {
         'index': ['./src/index.js'],
         'second': ['./src/second.js'],
-        'third': ['./src/third.js'],
         'HE': ['./src/HE.js'],
         'BE': ['./src/BE.js'],
         // vendor: ["vue", "whatwg-fetch", "vuelidate", "vue-router"]
@@ -97,13 +96,6 @@ module.exports = {
             inject: false,
             template: path.join(__dirname, '../template/second.ejs'),
             chunks: ['second']
-        }),
-        new HtmlWebpackPlugin({
-            alwaysWriteToDisk: true,
-            filename: 'template/third.html',
-            inject: false,
-            template: path.join(__dirname, '../template/third.ejs'),
-            chunks: ['third']
         }),
         new HtmlWebpackPlugin({
             alwaysWriteToDisk: true,

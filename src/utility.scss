@@ -29,3 +29,48 @@
 .min-font {
     font-size: 12px;
 }
+
+.background {
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    min-width: 1000px;
+}
+
+.bounce {
+    transform: translateX(300px);
+    transition-duration: 3s;
+}
+
+.be_dialog,
+.dialog {
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #000000;
+    border-radius: 10px;
+    height: 150px;
+    width: 50%;
+    padding: 20px;
+}
+
+.dialog {
+    margin-left: 24%;
+}
+
+.word {
+    height: 100px;
+}
+
+.next {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #ffffff;
+    margin-left: 90%;
+}
+.cat {
+    height: 250px;
+    margin-top: 30%;
+    // margin-top: 420px;
+}

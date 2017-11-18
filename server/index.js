@@ -16,11 +16,21 @@ router.get('/', function(ctx, next){
         ctx.body = template({})
 });
 
-router.get('/windows', function(ctx, next){
-    let template = swig.compileFile(path.resolve(templateRoot, "index.html"));
+router.get('/second', function(ctx, next){
+    let template = swig.compileFile(path.resolve(templateRoot, "second.html"));
     ctx.body = template({})
 });
 
+
+router.get('/HE', function(ctx, next){
+    let template = swig.compileFile(path.resolve(templateRoot, "HE.html"));
+    ctx.body = template({})
+});
+
+router.get('/BE', function(ctx, next){
+    let template = swig.compileFile(path.resolve(templateRoot, "BE.html"));
+    ctx.body = template({})
+});
 router.get(/^\/static(?:\/|$)/, async(ctx) => {
     let filepath = ctx.path.replace(/static\//, "")
     await send(ctx, filepath, {

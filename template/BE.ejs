@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% block title %}我想变回人{% endblock %}
+{% block css %}<link rel="stylesheet" type="text/css" href="/static/css/BE.css">{% endblock %}
 {% block script %}
 <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
    <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>

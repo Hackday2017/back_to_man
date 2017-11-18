@@ -13,12 +13,6 @@
 			"async": false
 		},
 		{
-			"name" : "third",
-			"endpoint": "/third",
-			"template": "third",
-			"async": false
-		},
-		{
 			"name" : "HE",
 			"endpoint": "/HE",
 			"template": "HE",
