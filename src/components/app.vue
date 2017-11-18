@@ -1,7 +1,7 @@
 <template>
     <div v-on:click="this.cat_move" class="full_width full_height page1 background">
         <img src="../pictures/home.png" class="full_width full_height home" v-if="this.start">
-        <div class="start" v-on:click="this.start_game" v-if="this.start">开始游戏</div>
+        <img src="../pictures/start.png" class="start" v-on:click="this.start_game" v-if="this.start">
         <img v-bind:class="{ bounce: move}" src="../pictures/cat.png" class="cat inline_block vertical_align">
         <div class="dialog inline_block vertical_align">
             <div class="dialog1" v-if="this.word == 0">
@@ -57,6 +57,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: block;
+        width: 200px;
     }
     .background {
         background-repeat: no-repeat;
