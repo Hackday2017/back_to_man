@@ -1,0 +1,13 @@
+{
+	"routes": [
+		{
+			"name" : "mac",
+			"endpoint": "/",
+			"template": "index",
+			"async": false
+		}
+	],
+	"data":{
+		
+	}
+}
