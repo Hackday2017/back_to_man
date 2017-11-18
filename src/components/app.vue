@@ -2,6 +2,7 @@
     <div v-on:click="this.cat_move" class="full_width full_height page1 background">
         <img src="../pictures/home.png" class="full_width full_height home" v-if="this.start">
         <img src="../pictures/start.png" class="start" v-on:click="this.start_game" v-if="this.start">
+        <div class="line"></div>
         <img v-bind:class="{ bounce: move}" src="../pictures/cat.png" class="cat inline_block vertical_align">
         <div class="dialog inline_block vertical_align">
             <div class="dialog1" v-if="this.word == 0">
@@ -70,10 +71,18 @@
     .page1 {
         background-image: url('../pictures/background1.png');
     }
-    
+    .line {
+        background-color: #fff;
+        width: 200px;
+        height: 2px;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .cat {
-        height: 200px;
-        margin-top: 32%;
+        height: 250px;
+        margin-top: 30%;
         // margin-top: 420px;
     }
     
@@ -87,14 +96,14 @@
         font-size: 16px;
         background-color: #000000;
         border-radius: 10px;
-        height: 100px;
+        height: 150px;
         width: 50%;
         margin-left: 24%;
         padding: 20px;
     }
     
     .word {
-        height: 60px;
+        height: 100px;
     }
     
     .next {
