@@ -1,9 +1,33 @@
 {
 	"routes": [
 		{
-			"name" : "mac",
+			"name" : "index",
 			"endpoint": "/",
 			"template": "index",
+			"async": false
+		},
+		{
+			"name" : "second",
+			"endpoint": "/second",
+			"template": "second",
+			"async": false
+		},
+		{
+			"name" : "third",
+			"endpoint": "/third",
+			"template": "third",
+			"async": false
+		},
+		{
+			"name" : "HE",
+			"endpoint": "/HE",
+			"template": "HE",
+			"async": false
+		},
+		{
+			"name" : "BE",
+			"endpoint": "/BE",
+			"template": "BE",
 			"async": false
 		}
 	],

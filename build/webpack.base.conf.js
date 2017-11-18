@@ -13,7 +13,11 @@ function resolve(dir) {
 
 module.exports = {
     entry: {
-        'index': ['./src/index.js']
+        'index': ['./src/index.js'],
+        'second': ['./src/second.js'],
+        'third': ['./src/third.js'],
+        'HE': ['./src/HE.js'],
+        'BE': ['./src/BE.js'],
         // vendor: ["vue", "whatwg-fetch", "vuelidate", "vue-router"]
     },
     output: {
@@ -93,6 +97,34 @@ module.exports = {
             template: path.join(__dirname, '../template/index.ejs'),
             chunks: ['index']
         }),
+        new HtmlWebpackPlugin({
+            alwaysWriteToDisk: true,
+            filename: 'template/second.html',
+            inject: false,
+            template: path.join(__dirname, '../template/second.ejs'),
+            chunks: ['second']
+        }),
+        new HtmlWebpackPlugin({
+            alwaysWriteToDisk: true,
+            filename: 'template/third.html',
+            inject: false,
+            template: path.join(__dirname, '../template/third.ejs'),
+            chunks: ['third']
+        }),
+        new HtmlWebpackPlugin({
+            alwaysWriteToDisk: true,
+            filename: 'template/HE.html',
+            inject: false,
+            template: path.join(__dirname, '../template/HE.ejs'),
+            chunks: ['HE']
+        }),
+        new HtmlWebpackPlugin({
+            alwaysWriteToDisk: true,
+            filename: 'template/BE.html',
+            inject: false,
+            template: path.join(__dirname, '../template/BE.ejs'),
+            chunks: ['BE']
+        }), 
         new HtmlWebpackHarddiskPlugin()
     ]
 }
