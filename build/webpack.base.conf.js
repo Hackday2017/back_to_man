@@ -86,12 +86,6 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             alwaysWriteToDisk: true,
-            filename: './template/svg.html',
-            inject: false,
-            template: './template/svg.ejs'
-        }),
-        new HtmlWebpackPlugin({
-            alwaysWriteToDisk: true,
             filename: 'template/index.html',
             inject: false,
             template: path.join(__dirname, '../template/index.ejs'),
