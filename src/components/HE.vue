@@ -54,6 +54,7 @@
     right: 40%;
     position: absolute;
     display: block;
+    cursor: pointer;
   }
   
   .box {
@@ -64,7 +65,9 @@
   }
   
   .medicine {
-    margin: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50px;
   }
   
   .man {

@@ -129,6 +129,7 @@
     right: 40%;
     position: absolute;
     display: block;
+    cursor: pointer;
   }
   .arrow {
     width: 0;
@@ -139,6 +140,7 @@
   }
   .choice {
     margin: 20px;
+    cursor: pointer;
   }
   .key {
     margin-top: 30px;

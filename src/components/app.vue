@@ -3,7 +3,6 @@
         <img src="../pictures/home.png" class="full_width full_height home" v-if="this.start">
         <img src="../pictures/start.png" class="start" v-on:click="this.start_game" v-if="this.start">
         <div class="line" v-if="this.start"></div>
-        
         <div class="black full_width full_height" v-if="this.black" v-on:click="this.cat_move">
             <div class="start">怎么感觉晕乎乎的...</div>
         </div>
@@ -39,7 +38,9 @@
                 move: false,
                 word: 0,
                 start: true,
-                balck: false
+                balck: false,
+                username: "",
+                name: []
             }
         },
         methods: {
@@ -75,6 +76,7 @@
         transform: translate(-50%, -50%);
         display: block;
         width: 200px;
+        cursor: pointer;
     }
     .black {
         background-color: #000000;
@@ -101,6 +103,7 @@
         right: 18%;
         position: absolute;
         display: block;
+        cursor: pointer;
     }
     
 </style>

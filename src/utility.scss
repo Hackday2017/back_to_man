@@ -48,7 +48,7 @@
     font-size: 16px;
     background-color: #000000;
     border-radius: 10px;
-    height: 150px;
+    height: 100px;
     width: 50%;
     padding: 20px;
 }
@@ -58,7 +58,7 @@
 }
 
 .word {
-    height: 100px;
+    height: 60px;
 }
 
 .next {
@@ -68,6 +68,7 @@
     border-bottom: 10px solid transparent;
     border-left: 10px solid #ffffff;
     margin-left: 90%;
+    cursor: pointer;
 }
 .cat {
     height: 250px;
