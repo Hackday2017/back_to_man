@@ -44,6 +44,10 @@
 <style lang="scss">
   .page2 {
     background-image: url('../pictures/background4.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    min-width: 1000px;
   }
   
   .go {
@@ -51,14 +55,17 @@
     right: 10%;
     position: absolute;
     display: block;
+    cursor: pointer;
   }
 
   .ending {
     background-image: url('../pictures/be.png');
-    color: #ffffff;
     position: absolute;
     top: 0;
     left: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
   }
  .be_dialog {
    position: absolute;
