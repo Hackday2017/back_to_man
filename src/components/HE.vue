@@ -1,5 +1,5 @@
 <template>
-  <div class="page2 full_width full_height" v-on:click="this.cat_move">
+  <div class="page2 full_width full_height background" v-on:click="this.cat_move">
     <img src="../pictures/go.png" class="go" v-on:click="this.show" v-if="this.word == 0">
     <img src="../pictures/box.png" class="box" v-if="this.word == 0">
     <img v-bind:class="{ bounce: move}" src="../pictures/cat.png" class="cat inline_block vertical_align">
