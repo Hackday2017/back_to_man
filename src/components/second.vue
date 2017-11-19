@@ -9,8 +9,8 @@
       </div>
       <div v-else-if="this.word == 1">
         <div class="name">【小猫】</div>
-        <div class="word">我本来是人，醒来不知道为什么变成了猫，我不记得发生了什么。
-       你是谁？你为什么会在这里？</div>
+        <div class="word">我本来是人，醒来不知道为什么变成了猫，我不记得发生了什么。 你是谁？你为什么会在这里？
+        </div>
       </div>
       <div v-else-if="this.word == 2">
         <div class="name">【病人】</div>
@@ -57,8 +57,8 @@
       </div>
       <div v-else-if="this.word == 11">
         <div class="name">【病人】</div>
-        <div class="word">太好了。他们有研发成功的药，那些药藏在制药基地，用箱子锁了起来。
-            被抓走前我把钥匙偷走了。希望能给你带来帮助。</div>
+        <div class="word">太好了。他们有研发成功的药，那些药藏在制药基地，用箱子锁了起来。 被抓走前我把钥匙偷走了。希望能给你带来帮助。
+        </div>
       </div>
       <div v-else-if="this.word == 12">
         <div>【获得钥匙】</div>
@@ -91,11 +91,9 @@
         this.word++;
         if (this.word == 12) {
           this.key = true;
-        }
-          else if (this.word == 13) {
+        } else if (this.word == 13) {
           this.he()
-          }
-        else if (this.word == 14) {
+        } else if (this.word == 14) {
           this.be()
         }
       },
@@ -109,7 +107,7 @@
         window.location.href = '/HE'
       },
       not_believe() {
-        this.word = 14
+        this.word = 13
       },
       be() {
         window.location.href = '/BE'
@@ -130,6 +128,7 @@
     display: block;
     cursor: pointer;
   }
+  
   .arrow {
     width: 0;
     height: 0;
@@ -137,10 +136,12 @@
     border-bottom: 8px solid transparent;
     border-left: 8px solid #ffffff;
   }
+  
   .choice {
     margin: 20px;
     cursor: pointer;
   }
+  
   .key {
     margin-top: 10px;
     margin-left: 30px;
